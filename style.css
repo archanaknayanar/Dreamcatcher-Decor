@@ -1,0 +1,136 @@
+body {
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins" , sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;  
+}
+.left-column ,.right-column {
+    flex-basis: 50%;
+    position: relative;
+    height: 100vh;
+}
+.logo {
+    display: block;
+    width: 80px;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%); /*position will be on center from vertical*/
+}
+.content h1 {
+    font-size: 38px;
+    line-height: 2.8rem;
+    font-weight: 700;
+    margin: 25px 0;
+    color: #466126;
+}
+.content p {
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: #3c4439;
+}
+button {
+    background-color: #466126;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 1px #aaafa8;
+    word-spacing: .5em;
+    border: none;
+    width: 150px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+.slider {
+    display: flex;
+    width: 100%;
+    height: 60%;
+}
+.slider img {
+    width: 100%;
+}
+.slider-content {
+    width: 100%;
+    height: 40%;
+    background-color: #466126;
+    padding-top: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+.slider-content h2 {
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: .1em;
+    font-size: 24px;
+}
+.slider-content p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.slider-content hr {
+    border: none;
+    width: 270px;
+    height: 1px;
+    background-color: aliceblue;
+    margin: 20px 0px 30px;
+}
+.controller{
+    width: 120px;
+    align-content: center;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+}
+.controller img {
+    width: 40px;
+    cursor: pointer;
+}
+.vertical-line {
+    width: 2px;
+    height: 30px;
+    background-color: aliceblue;
+}
+
+/********MEDIA QUERY FOR SMALL SCREEN DEVICES*******/
+@media only screen and (max-width: 800px){
+    .logo {
+        margin: 30px auto;
+    }
+    .left-column,.right-column {
+        flex-basis: 100%;
+    }
+    .content {
+        left: 0;
+        padding: 30px;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 30px;
+        line-height: 2rem;
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 2rem;
+    }
+    .slider {
+        height: auto;
+    }
+    .slider-content {
+        height: auto;
+    }
+}
+

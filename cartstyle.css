@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    font-family: "Poppins" , sans-serif;
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+   background-image: url('images/bg2.jpg');
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   height: 150px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: black;
+}
+.logo {
+    font-size: 18px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+    
+}
+nav li {
+    margin-left: 30px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+nav li a {
+    padding: 8px;
+    background-color: aliceblue;
+    text-decoration: none;
+}
+nav li span {
+    padding-left: 5px;
+}
+.cart ion-icon {
+    padding-right: 3px;
+    vertical-align: bottom;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    margin-top: 20px;
+
+}
+.image {
+    margin: 0px 20px 0px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.image h3 {
+    text-align: center;
+}
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(100, 98, 98);
+    color: aliceblue;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5
+ {
+    bottom: 20px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        flex-basis: 100%;
+    }
+    header {
+        text-align: center;
+        left:0;
+        padding: 30px;
+    }
+    nav {
+        display: block;
+    }
+    .container {
+        height: auto;
+        width: 100%;
+    }
+    .image {
+        height: auto;
+        width: 100%;
+    
+    }
+}
